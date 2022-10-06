@@ -1,6 +1,5 @@
 # 졸업작품_배화여대 앱 만들기
-## 로그인 창
-### 2022.10.05 오류 파일
+## 2022.10.05 오류 파일
 * StaticsFragment.java
   *  error 1 : Cannot resolve symbol 'RankListAdapter'
   *  error 2 : Cannot resolve method 'notifyDataSetChanged()'
@@ -22,3 +21,7 @@
   *  error 4 : Cannot resolve method 'CircleImageView_civ_border_overlay'
   *  error 5 : Cannot resolve method 'CircleImageView_civ_circle_background_color'
 
+## 로그인 창
+![image](https://user-images.githubusercontent.com/87688825/194189048-f750f33d-7441-4d10-9e96-e894d5cfc2f8.png
+* 아이디 비밀번호 입력 후 로그인
+* 
