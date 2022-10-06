@@ -49,7 +49,7 @@
 * 성적확인
 
 ## 로그인 창
-![image](https://user-images.githubusercontent.com/87688825/194189048-f750f33d-7441-4d10-9e96-e894d5cfc2f8.png
+![image](https://user-images.githubusercontent.com/87688825/194189048-f750f33d-7441-4d10-9e96-e894d5cfc2f8.png)
 * 아이디 비밀번호 입력 후 로그인
 * 
 
