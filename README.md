@@ -14,7 +14,7 @@
    *  error 3 : Cannot resolve method 'show' in 'AlertDialog'
    *  error 4 : Cannot resolve method 'dismiss' in 'AlertDialog'
   
-## 만들어야 될 페이지
+## 앱 정보
 > 사용한 sql 등 설명
 * **android studio(Java)**
 * **phpMyAdmin**
@@ -79,6 +79,20 @@
 ![Baewha_TimeTable](https://user-images.githubusercontent.com/87688825/194351844-b80e7e1d-2592-490d-870b-17145eba5402.jpg)
 ![Baewha_AnalyzeCourse](https://user-images.githubusercontent.com/87688825/194351890-e0415c8e-c64f-4755-b215-91fbe26870d1.jpg)
 
+#### 2022.10.05 오류 파일
+* StaticsFragment.java >> 해결(2022.10.06)
+* CricleImageView.java >> 해결(2022.10.06)
+
+* SplashActivity.java
+   *  error 1 : Overriding method should call 'super.onRequestPermissionsResult';
+   *  error 2 : Call requires permission which may be rejected by user: code should explicitly check to see if permission is available or explicitly handle a potential 'SecurityException'
+
+* RegisterActivity.java 
+   *  error 1 : Cannot resolve symbol 'Builder'
+   *  error 2 : Cannot resolve method 'setMessage(java.lang.String)'
+   *  error 3 : Cannot resolve method 'show' in 'AlertDialog'
+   *  error 4 : Cannot resolve method 'dismiss' in 'AlertDialog'
+   
 ## 팀원
 이름 | 깃허브
 --|---|
