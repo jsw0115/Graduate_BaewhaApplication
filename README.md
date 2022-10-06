@@ -24,11 +24,12 @@
   
 ## 만들어야 될 페이지
 > 사용한 sql 등 설명
-* **android studio**
+* **android studio(Java)**
 * **phpMyAdmin**
 * **VisualStudioCode**
 * **mysql** 
 * **FileZila**
+* **Cafe24**
 
 <!-- 기능설명 -->
 > 앱의 기능
