@@ -41,11 +41,12 @@
 * 성적확인
 
 ## 로그인 창
-![image](https://user-images.githubusercontent.com/87688825/194189048-f750f33d-7441-4d10-9e96-e894d5cfc2f8.png)
+![Baewha_Login](https://user-images.githubusercontent.com/87688825/194351944-004dd101-7262-4282-9ba5-c49b0fae252d.jpg)
 * 아이디 비밀번호 입력 후 로그인
 * 
 
 ## 회원가입 창
+![Baewha_Register](https://user-images.githubusercontent.com/87688825/194351982-4c6425c1-779a-405b-8e02-a4c01215883c.jpg)
 * 아이디 비밀번호 입력 후 로그인
 
 ## 버스 셔틀 창
@@ -73,6 +74,10 @@
 ## 성적 확인 창
 * 아이디 비밀번호 입력 후 로그인
 
+## 수강신청 창
+![Baewha_RegisterCourse](https://user-images.githubusercontent.com/87688825/194351791-7b934c82-48bf-464c-8fc1-5f2b4b442c05.jpg)
+![Baewha_TimeTable](https://user-images.githubusercontent.com/87688825/194351844-b80e7e1d-2592-490d-870b-17145eba5402.jpg)
+![Baewha_AnalyzeCourse](https://user-images.githubusercontent.com/87688825/194351890-e0415c8e-c64f-4755-b215-91fbe26870d1.jpg)
 
 ## 팀원
 이름 | 깃허브
