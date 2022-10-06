@@ -17,6 +17,7 @@ import android.provider.Settings;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -72,13 +73,14 @@ public class SplashActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == GPS_UTIL_LOCATION_PERMISSION_REQUEST_CODE) {
             for (int i = 0; i < permissions.length; i++) {
                 if (Manifest.permission.ACCESS_FINE_LOCATION.equals(permissions[i])) {
                     if (grantResults[i] == PackageManager.PERMISSION_GRANTED) {
                         checkLocationSetting();
                     } else {
-                        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(this);
                         builder.setTitle("위치 권한이 꺼져있습니다.");
                         builder.setMessage("[권한] 설정에서 위치 권한을 허용해야 합니다.");
                         builder.setPositiveButton("설정으로 가기", new DialogInterface.OnClickListener() {
@@ -96,7 +98,7 @@ public class SplashActivity extends AppCompatActivity {
                                 finish();
                             }
                         });
-                        androidx.appcompat.app.AlertDialog alert = builder.create();
+                        AlertDialog alert = builder.create();
                         alert.show();
                     }
                     break;

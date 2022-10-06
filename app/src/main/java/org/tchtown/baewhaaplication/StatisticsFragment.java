@@ -1,7 +1,8 @@
 package org.tchtown.baewhaaplication;
-
+// 2022.10.05 코드 작성
 /* 2022.10.05 22:42
 *  error 1 : Cannot resolve symbol 'RankListAdapter'
+*  error 3 : 'setAdapter(android.widget.ListAdapter)' in 'android.widget.ListView' cannot applied to '(RankListAdapter)'
 *  error 2 : Cannot resolve method 'notifyDataSetChanged()'
 * */
 
