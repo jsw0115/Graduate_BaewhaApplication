@@ -1,6 +1,6 @@
 # 졸업작품_배화여대 앱 만들기
 
-## 2022.10.05 오류 파일
+#### 2022.10.05 오류 파일
 * StaticsFragment.java
   *  error 1 : Cannot resolve symbol 'RankListAdapter'
   *  error 2 : Cannot resolve method 'notifyDataSetChanged()'
@@ -51,3 +51,21 @@
 ![image](https://user-images.githubusercontent.com/87688825/194189048-f750f33d-7441-4d10-9e96-e894d5cfc2f8.png
 * 아이디 비밀번호 입력 후 로그인
 * 
+
+## 회원가입 창
+
+## 버스 셔틀 창
+
+## 학교 카페 메뉴 창
+
+## 사이렌 오더 창
+
+## 재학생 활인(제휴기업) 확인 창
+
+## 학교 행사 정보 확인 창 (마카롱, 다울 등)
+
+## 학교 급식 확인 창
+
+## 천원밥 실시간 창
+
+## 성적 확인 창
