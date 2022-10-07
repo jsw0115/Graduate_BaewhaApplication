@@ -93,6 +93,10 @@
    *  error 3 : Cannot resolve method 'show' in 'AlertDialog'
    *  error 4 : Cannot resolve method 'dismiss' in 'AlertDialog'
    
+#### 기능 추가 **
+* 알림 기능 (공지사항이나 휴강, 정보 등을 알 수 있는..)
+    * 그림으로 쉽게 설명하는 안드로이드 프로그래밍(p.270 ~ 276)
+* API 기능 ()
 ## 팀원
 이름 | 깃허브
 --|---|
