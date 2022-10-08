@@ -1,28 +1,20 @@
 # 졸업작품_배화여대 앱 만들기
 
 #### 2022.10.05 오류 파일
-* StaticsFragment.java
-  *  error 1 : Cannot resolve symbol 'RankListAdapter'
-  *  error 2 : Cannot resolve method 'notifyDataSetChanged()'
+* StaticsFragment.java >> 해결(2022.10.06)
+* CricleImageView.java >> 해결(2022.10.06)
 
 * SplashActivity.java
    *  error 1 : Overriding method should call 'super.onRequestPermissionsResult';
    *  error 2 : Call requires permission which may be rejected by user: code should explicitly check to see if permission is available or explicitly handle a potential 'SecurityException'
 
-* RegisterActivity.java
+* RegisterActivity.java 
    *  error 1 : Cannot resolve symbol 'Builder'
    *  error 2 : Cannot resolve method 'setMessage(java.lang.String)'
    *  error 3 : Cannot resolve method 'show' in 'AlertDialog'
    *  error 4 : Cannot resolve method 'dismiss' in 'AlertDialog'
-   
-* CricleImageView.java
-  *  error 1 : Cannot resolve symbol 'CircleImageView'
-  *  error 2 : Cannot resolve method 'CircleImageView_civ_border_width'
-  *  error 3 : Cannot resolve method 'CircleImageView_civ_border_color'
-  *  error 4 : Cannot resolve method 'CircleImageView_civ_border_overlay'
-  *  error 5 : Cannot resolve method 'CircleImageView_civ_circle_background_color'
   
-## 만들어야 될 페이지
+## 앱 정보
 > 사용한 sql 등 설명
 * **android studio(Java)**
 * **phpMyAdmin**
@@ -49,11 +41,12 @@
 * 성적확인
 
 ## 로그인 창
-![image](https://user-images.githubusercontent.com/87688825/194189048-f750f33d-7441-4d10-9e96-e894d5cfc2f8.png)
+![Baewha_Login](https://user-images.githubusercontent.com/87688825/194351944-004dd101-7262-4282-9ba5-c49b0fae252d.jpg)
 * 아이디 비밀번호 입력 후 로그인
 * 
 
 ## 회원가입 창
+![Baewha_Register](https://user-images.githubusercontent.com/87688825/194351982-4c6425c1-779a-405b-8e02-a4c01215883c.jpg)
 * 아이디 비밀번호 입력 후 로그인
 
 ## 버스 셔틀 창
@@ -81,10 +74,32 @@
 ## 성적 확인 창
 * 아이디 비밀번호 입력 후 로그인
 
+## 수강신청 창
+![Baewha_RegisterCourse](https://user-images.githubusercontent.com/87688825/194351791-7b934c82-48bf-464c-8fc1-5f2b4b442c05.jpg)
+![Baewha_TimeTable](https://user-images.githubusercontent.com/87688825/194351844-b80e7e1d-2592-490d-870b-17145eba5402.jpg)
+![Baewha_AnalyzeCourse](https://user-images.githubusercontent.com/87688825/194351890-e0415c8e-c64f-4755-b215-91fbe26870d1.jpg)
 
+#### 2022.10.05 오류 파일
+* StaticsFragment.java >> 해결(2022.10.06)
+* CricleImageView.java >> 해결(2022.10.06)
+
+* SplashActivity.java
+   *  error 1 : Overriding method should call 'super.onRequestPermissionsResult';
+   *  error 2 : Call requires permission which may be rejected by user: code should explicitly check to see if permission is available or explicitly handle a potential 'SecurityException'
+
+* RegisterActivity.java 
+   *  error 1 : Cannot resolve symbol 'Builder'
+   *  error 2 : Cannot resolve method 'setMessage(java.lang.String)'
+   *  error 3 : Cannot resolve method 'show' in 'AlertDialog'
+   *  error 4 : Cannot resolve method 'dismiss' in 'AlertDialog'
+   
+#### 기능 추가 **
+* 알림 기능 (공지사항이나 휴강, 정보 등을 알 수 있는..)
+    * 그림으로 쉽게 설명하는 안드로이드 프로그래밍(p.270 ~ 276)
+* API 기능 ()
 ## 팀원
 이름 | 깃허브
 --|---|
 정성원 | https://github.com/jsw0115
 남현서 | https://github.com/Veryberr
-박혜서 | https://github.com/standOutside
+박혜서 | https://github.com/stand0utside
