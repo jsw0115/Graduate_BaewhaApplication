@@ -18,23 +18,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Spinner;
-import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.tchtown.baewhaaplication.Course;
-import org.tchtown.baewhaaplication.MainActivity;
-import org.tchtown.baewhaaplication.StatisticsCourseListAdapter;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -42,8 +32,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
