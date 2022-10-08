@@ -40,7 +40,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
                 <EditText
                     android:id="@+id/idText"
@@ -53,6 +54,7 @@
                     android:drawableLeft="@drawable/ic_person_black_24dp"
                     android:hint="아이디"
                     android:padding="10dp"
+                    android:textSize="15dp"
                     android:textColor="#ffffff"
                     android:textColorHint="#ffffff" />
 
@@ -65,7 +67,9 @@
                     android:text="중복체크"
                     android:textColor="#ffffff"
                     android:textSize="15dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
 
             </LinearLayout>
 
@@ -82,7 +86,8 @@
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
+                android:textColorHint="#ffffff"
+                android:textSize="15dp"/>
 
             <EditText
                 android:id="@+id/emailText"
@@ -96,7 +101,8 @@
                 android:hint="이메일"
                 android:padding="10dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
+                android:textColorHint="#ffffff"
+                android:textSize="15dp"/>
 
             <RadioGroup
                 android:id="@+id/gradeGroup"
@@ -112,28 +118,32 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:checked="true"
-                    android:text="1학년" />
+                    android:text="1학년"
+                    android:textSize="15dp"/>
 
                 <RadioButton
                     android:id="@+id/grade02"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="2학년" />
+                    android:text="2학년"
+                    android:textSize="15dp"/>
 
                 <RadioButton
                     android:id="@+id/grade03"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="3학년" />
+                    android:text="3학년"
+                    android:textSize="15dp"/>
 
                 <RadioButton
                     android:id="@+id/grade04"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="4학년" />
+                    android:text="4학년"
+                    android:textSize="15dp"/>
 
 
             </RadioGroup>
@@ -141,21 +151,24 @@
             <Spinner
                 android:id="@+id/majorSpinner"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="21dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:scrollbarSize="30dp"
+                />
+            // 변경 scrollbarSize 확인하기
 
             <Button
                 android:id="@+id/registerButton"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"
+                android:layout_height="49dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@color/colorPrimary"
+                android:gravity="center"
                 android:text="가입하기"
                 android:textColor="#ffffff"
                 android:textSize="20dp"
-                android:gravity="center"
                 android:textStyle="bold" />
 
         </LinearLayout>
