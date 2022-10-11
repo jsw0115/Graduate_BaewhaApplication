@@ -1,5 +1,6 @@
 package org.tchtown.baewhaaplication;
 // 로그인 액티비티 확인하기 AlertDialog 특히나 더 확인하기 ****
+
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
 
         TextView registerButton = (TextView)findViewById(R.id.registerButton);
         registerButton.setOnClickListener(new View.OnClickListener(){
