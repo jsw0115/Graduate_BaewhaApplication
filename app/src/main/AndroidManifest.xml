@@ -21,23 +21,32 @@
         android:theme="@style/Theme.BaewhaAplication"
         android:usesCleartextTraffic="true"
         tools:targetApi="31" >
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5051898059711090~8252923447"/>
         <activity
             android:name=".MainActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_main" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="true" >
+            android:name=".Splashscreen"
+            android:exported="true"
+            android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+
         <activity
             android:name=".Pop"
             android:theme="@style/AppTheme.Pop" >
         </activity>
+
     </application>
 
 </manifest>

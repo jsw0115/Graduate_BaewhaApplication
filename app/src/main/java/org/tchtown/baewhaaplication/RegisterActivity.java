@@ -16,47 +16,23 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
-import com.android.volley.*;
 
 import org.json.JSONObject;
 
-import android.app.AlertDialog.*;
-import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
-import androidx.appcompat.app.AppCompatActivity;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.Spinner;
-
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONObject;
-
-import org.json.JSONObject;
-
-public class RegisterActivity<AlertDialog> extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     private ArrayAdapter adapter;
     private Spinner spinner;
     private String userID;
     private String userPassword;
-    private String userGrade;   // userGender
+    private String userGrade;
     private String userMajor;
     private String userEmail;
     private AlertDialog dialog;
@@ -83,8 +59,8 @@ public class RegisterActivity<AlertDialog> extends AppCompatActivity {
 
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                RadioButton genderButton = (RadioButton)findViewById(i);
-                userGrade = genderButton.getText().toString();
+                RadioButton gradeButton = (RadioButton)findViewById(i);
+                userGrade = gradeButton.getText().toString();
             }
         });
 
@@ -109,16 +85,15 @@ public class RegisterActivity<AlertDialog> extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         try {
-                            JSONObject jsonResponse = new JSONObject(response);
+                            JSONObject jsonResponse= new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
-                            if(success){
+                            if (success){
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("사용할 수 있는 아이디입니다.")
                                         .setPositiveButton("확인",null).create();
                                 dialog.show();
                                 idText.setEnabled(false);
                                 validate = true;
-                                validateButton.setText("확인");
                                 idText.setBackgroundColor(getResources().getColor(R.color.colorGray));
                                 validateButton.setBackgroundColor(getResources().getColor(R.color.colorGray));
                             }
@@ -207,5 +182,4 @@ public class RegisterActivity<AlertDialog> extends AppCompatActivity {
             dialog = null;
         }
     }
-
 }

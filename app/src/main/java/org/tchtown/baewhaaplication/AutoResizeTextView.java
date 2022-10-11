@@ -13,7 +13,7 @@ public class AutoResizeTextView extends androidx.appcompat.widget.AppCompatTextV
     // Minimum text size for this text view
     public static final float MIN_TEXT_SIZE = 20;
 
-    // Interface for resize notifications
+    // Interface for resize mypage
     public interface OnTextResizeListener {
         public void onTextResize(TextView textView, float oldSize, float newSize);
     }
@@ -82,7 +82,7 @@ public class AutoResizeTextView extends androidx.appcompat.widget.AppCompatTextV
     }
 
     /**
-     * Register listener to receive resize notifications
+     * Register listener to receive resize mypage
      * @param listener
      */
     public void setOnResizeListener(OnTextResizeListener listener) {

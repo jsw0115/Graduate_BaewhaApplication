@@ -1,16 +1,16 @@
-package org.tchtown.baewhaaplication.ui.notifications;
+package org.tchtown.baewhaaplication.ui.mypage;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class mypageViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public mypageViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("This is mypage fragment");
     }
 
     public LiveData<String> getText() {

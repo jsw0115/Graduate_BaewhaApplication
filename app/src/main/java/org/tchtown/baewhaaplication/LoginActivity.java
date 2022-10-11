@@ -1,5 +1,6 @@
 package org.tchtown.baewhaaplication;
-
+// 로그인 액티비티 확인하기 AlertDialog 특히나 더 확인하기 ****
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,23 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.json.JSONObject;
-
-import com.android.volley.Response;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.android.volley.RequestQueue;
-import com.android.volley.Request;
 import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
+import org.json.JSONObject;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -63,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
                             if(success){
-                                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(LoginActivity.this);
                                 dialog = builder.setMessage("로그인에 성공했습니다.")
                                         .setPositiveButton("확인", null).create();
                                 dialog.show();
@@ -73,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                                 finish();
                             }
                             else{
-                                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(LoginActivity.this);
                                 dialog = builder.setMessage("계정을 다시 확인하세요")
                                         .setNegativeButton("다시 시도", null).create();
                                 dialog.show();
