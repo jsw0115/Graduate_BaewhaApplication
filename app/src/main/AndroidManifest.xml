@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.tchtown.baewhaaplication" >
+    package="org.tchtown.baewhaaplication">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -20,21 +20,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaewhaAplication"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".MealActivity"
+            android:exported="false"
+            android:label="@string/title_activity_meal" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-5051898059711090~8252923447"/>
+            android:value="ca-app-pub-5051898059711090~8252923447" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Splashscreen"
             android:exported="true"
-            android:label="@string/title_splashscreen" >
+            android:label="@string/title_splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,22 +49,16 @@
             android:name=".LoginActivity"
             android:exported="true"
             android:label="@string/title_loginpage"
-            android:theme="@style/AppTheme">
-
-        </activity>
-
+            android:theme="@style/AppTheme"></activity>
         <activity
             android:name=".RegisterActivity"
             android:exported="true"
             android:label="@string/title_registerpage"
-            android:theme="@style/AppTheme"/>
-
+            android:theme="@style/AppTheme" />
 
         <activity
             android:name=".Pop"
-            android:theme="@style/AppTheme.Pop" >
-        </activity>
-
+            android:theme="@style/AppTheme.Pop"></activity>
     </application>
 
 </manifest>
