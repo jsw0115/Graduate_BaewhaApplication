@@ -13,7 +13,6 @@ import androidx.lifecycle.ViewModelProvider;
 import org.tchtown.baewhaaplication.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
-
     private FragmentDashboardBinding binding;
 //* 추가
     private static final String ARG_PARAM1 = "param1";
@@ -35,14 +34,15 @@ public class DashboardFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        DashboardViewModel dashboardViewModel = new ViewModelProvider(this).get(DashboardViewModel.class);
+        //View root = inflater.inflate(R.layout.dashboardFrag, container, false);
 
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textDashboard;
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
         return root;
     }
 

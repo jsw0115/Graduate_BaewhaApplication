@@ -7,13 +7,16 @@
     tools:context=".ScheduleFragment"
     android:background="@color/colorBackground"
     android:orientation="vertical">
-    >
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="8dp">
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+
+        >
 
         <TableLayout
             android:layout_width="match_parent"
@@ -1378,6 +1381,16 @@
     </LinearLayout>    <!-- TODO: Update blank fragment layout -->
 
 
+
+
+    <RelativeLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </RelativeLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"
@@ -1390,12 +1403,5 @@
         app:menu="@menu/bottom_nav_menu"
         tools:layout_editor_absoluteX="16dp"
         app:labelVisibilityMode="labeled" />
-
-    <RelativeLayout
-        android:id="@+id/fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </RelativeLayout>
 
 </LinearLayout>

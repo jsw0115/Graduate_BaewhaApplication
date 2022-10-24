@@ -4,29 +4,24 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
+import org.tchtown.baewhaaplication.R;
 import org.tchtown.baewhaaplication.databinding.FragmentMypageBinding;
 
 public class mypageFragment extends Fragment {
 
     private FragmentMypageBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        mypageViewModel mypageViewModel =
-                new ViewModelProvider(this).get(mypageViewModel.class);
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View v=inflater.inflate(R.layout.fragment_mypage,container,false);
+        return v;
 
-        binding = FragmentMypageBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        final TextView textView = binding.textMypage;
-        mypageViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
     }
 
     @Override

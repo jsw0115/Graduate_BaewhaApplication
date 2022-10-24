@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     public static String userID;
     BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment;
-    DashboardFragment dashboardFragment;
+    MenuFragment menuFragment;
     mypageFragment mypageFragment;
     private MenuItem item;
     LinearLayout dashboard;
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         ///* bottom navigation view 추가 20221011 PM10:28
         // bottom navigation view
         homeFragment = new HomeFragment();
-        dashboardFragment = new DashboardFragment();
+        menuFragment = new MenuFragment();
         mypageFragment = new mypageFragment();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.notice, homeFragment).commit();
@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.navigation_dashboard:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.notice, dashboardFragment).commit();
+                    case R.id.navigation_menu:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.notice, menuFragment).commit();
                         return true;
                     case R.id.navigation_home:
                         getSupportFragmentManager().beginTransaction().replace(R.id.notice, homeFragment).commit();
@@ -202,9 +202,9 @@ public class MainActivity extends AppCompatActivity {
                             .commit();
                     return true;
                 }
-                case R.id.navigation_dashboard: {
+                case R.id.navigation_menu: {
                     getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.dashboard, new DashboardFragment())
+                            .replace(R.id.dashboard, new MenuFragment())
                             .commit();
                     return true;
                 }
